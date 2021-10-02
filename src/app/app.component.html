@@ -1,0 +1,17 @@
+<form #usersForms="ngForm" (ngSubmit)="getUserFormData(usersForms.value)">
+  <input type="text" ngModel name="name" placeholder="Ingresa el nombre" />
+  <br />
+  <br />
+  <input
+    type="text"
+    ngModel
+    name="lastname"
+    placeholder="Ingresa el apellido"
+  />
+  <br />
+  <br />
+  <button>Enviar</button>
+  <br />
+  <br />
+  <div ngFor="dataRender">Nombre completo: {{ dataRender.fullName }}</div>
+</form>
